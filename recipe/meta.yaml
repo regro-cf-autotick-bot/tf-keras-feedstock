@@ -1,5 +1,5 @@
 {% set name = "tf-keras" %}
-{% set version = "2.15.0" %}
+{% set version = "2.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tf_keras-{{ version }}.tar.gz
-    sha256: d7559c2ba40667679fcb2105d3e4b68bbc07ecafbf1037462ce7b3974c3c6798
+    sha256: db53891f1ac98197c2acced98cdca8c06ba8255655a6cb7eb95ed49676118280
   - fn: LICENSE
     url: https://raw.githubusercontent.com/keras-team/tf-keras/v{{ version }}/LICENSE
     sha256: 58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
