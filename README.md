@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: Deep learning for humans.
 
+Development: https://github.com/keras-team/tf-keras
+
 Current build status
 ====================
 
