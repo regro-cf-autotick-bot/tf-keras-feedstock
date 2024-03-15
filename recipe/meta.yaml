@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - numpy >=1.23
-    - tensorflow
+    - tensorflow >=2.16,<2.17
 
 test:
   imports:
@@ -36,6 +36,7 @@ test:
 
 about:
   home: https://keras.io/
+  dev_url: https://github.com/keras-team/tf-keras
   summary: Deep learning for humans.
   license: Apache-2.0
   license_file: LICENSE
