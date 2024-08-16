@@ -1,5 +1,5 @@
 {% set name = "tf-keras" %}
-{% set version = "2.16.0" %}
+{% set version = "2.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tf_keras-{{ version }}.tar.gz
-    sha256: db53891f1ac98197c2acced98cdca8c06ba8255655a6cb7eb95ed49676118280
+    sha256: fda97c18da30da0f72a5a7e80f3eee343b09f4c206dad6c57c944fb2cd18560e
   - fn: LICENSE
-    url: https://raw.githubusercontent.com/keras-team/tf-keras/v{{ version }}/LICENSE
+    url: https://raw.githubusercontent.com/keras-team/tf-keras/master/LICENSE
     sha256: 58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 
 build:
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - numpy >=1.23
-    - tensorflow >=2.16,<2.17
+    - tensorflow >=2.17,<2.18
 
 test:
   imports:
