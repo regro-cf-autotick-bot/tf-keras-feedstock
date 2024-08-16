@@ -145,8 +145,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/keras](https://github.com/conda-forge/keras/)
-
-
-<!-- dummy commit to enable rerendering -->
+* [@conda-forge/keras](https://github.com/orgs/conda-forge/teams/keras/)
 
