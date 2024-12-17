@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tf_keras-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tf_keras-{{ version }}.tar.gz
     sha256: fda97c18da30da0f72a5a7e80f3eee343b09f4c206dad6c57c944fb2cd18560e
   - fn: LICENSE
     url: https://raw.githubusercontent.com/keras-team/tf-keras/master/LICENSE
@@ -15,14 +15,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >=1.23
     - tensorflow >=2.17,<2.18
 
@@ -33,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://keras.io/
